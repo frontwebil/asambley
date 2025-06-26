@@ -1,0 +1,26 @@
+.why-join {
+  background: #ECEBFF;
+  padding: 40px 0;
+}
+.why-join-flex {
+  margin-top: 40px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+/* .why-join-img {
+} */
+.why-join-flex-text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.why-join-flex-text-row {
+  display: flex;
+  gap: 10px;
+}
+.why-join-icon {
+  width: 32px;
+  height: 32px;
+}

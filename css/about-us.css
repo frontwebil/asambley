@@ -1,0 +1,46 @@
+.about-us {
+  background: #efefef;
+  padding: 40px 0;
+}
+.about-us .container-small {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.about-us-text {
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-us-line {
+  width: 36px;
+  height: 4px;
+  background: #1f12d4;
+  border-radius: 36px;
+}
+.about-us-button {
+  cursor: pointer;
+  width: max-content;
+  border: 2px solid #1f12d4;
+  border-radius: 4px;
+  padding: 12px 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all ease 0.3s;
+}
+
+.about-us-button:hover {
+  scale: 1.05;
+}
+
+.about-us-button p {
+  color: #1f12d4;
+}
+
+.about-us-img {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}

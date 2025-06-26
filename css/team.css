@@ -1,0 +1,25 @@
+.team {
+  background-color: #EFEFEF;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.team-block {
+  max-width: 305px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.team-block-top {
+  background: #0000001A;
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-block-img {
+  border-radius: 10px;
+}

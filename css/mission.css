@@ -1,0 +1,32 @@
+.mission {
+  padding: 100px 0;
+}
+.mission-content {
+  margin-top: 40px;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+.mission-content-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mission-content-cards-row {
+  display: flex;
+  gap: 20px;
+}
+.mission-content-card {
+  max-width: 410px;
+  width: 100%;
+  box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+    0 4px 4px -1px rgba(12, 12, 13, 0.1);
+  background: #fafafa;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 12px;
+}
+/* .mission-content-img {
+} */

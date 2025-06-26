@@ -1,0 +1,13 @@
+.structure {
+  text-align: center;
+  padding: 100px 0;
+}
+.structure-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.structure-slide{
+  padding: 40px 0;
+}

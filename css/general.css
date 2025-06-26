@@ -1,0 +1,64 @@
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-small {
+  max-width: 1095px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-xs {
+  font-size: 16px;
+}
+
+.text-s {
+  font-size: 18px;
+}
+
+.text-m {
+  font-size: 20px!important;
+}
+
+.text-l {
+  font-size: 24px!important;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Vinnytsia Sans", sans-serif;
+}
+/* font-family: "Vinnytsia Sans", sans-serif; */
+
+.text-xl-vn {
+  font-size: 32px;
+  font-family: "Vinnytsia Sans", sans-serif;
+  font-weight: 700;
+}
+
+.text-l-vn {
+  font-size: 24px;
+  font-family: "Vinnytsia Sans", sans-serif;
+  font-weight: 700;
+}
+
+.text-m-vn {
+  font-size: 20px;
+  font-family: "Vinnytsia Sans", sans-serif;
+  font-weight: 700;
+}
+
+.bold500 {
+  font-weight: 500;
+}
+
+.bold600 {
+  font-weight: 600;
+}
+
+.bold700 {
+  font-weight: 700;
+}

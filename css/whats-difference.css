@@ -1,0 +1,28 @@
+.whats-difference {
+  padding: 140px 0;
+}
+.whats-difference .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.whats-difference-blocks {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.whats-difference-block {
+  max-width: 410px;
+  width: 100%;
+  box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+    0 4px 4px -1px rgba(12, 12, 13, 0.1);
+  background: #FAFAFA;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-align: center;
+}
+.whats-difference-block h3{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}

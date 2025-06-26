@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", serif;
+}
+
+.swiper {
+  padding: 40px 10px;
+}
+
+.swiper-slides {
+  max-width: 1300px;
+  margin: 40px auto 30px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 331px;
+}
+.swiper-slide {
+  min-width: 100%;
+  flex-shrink: 1;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.swiper-slide.active {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+
+.controls-swiper-slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.controls-swiper-prev {
+  width: 24px;
+  height: 24px;
+}
+.indicators-swiper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.indicator-swiper {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #464646;
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: 38px;
+  cursor: pointer;
+}
+.indicator-swiper.active {
+  border: 1px solid #1f12d480;
+  background: #ecebff;
+  color: #1f12d480;
+}
+.controls-swiper-next {
+  width: 24px;
+  height: 24px;
+}
