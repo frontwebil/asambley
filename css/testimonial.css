@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 140px 40px 140px;
+  padding: 140px 15px 140px;
 }
 
 .testimonials-slides {
@@ -17,7 +17,7 @@
   display: flex;
   align-items: stretch;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
   opacity: 0;
   transition: 0.5s ease all;
 }
@@ -182,5 +182,20 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .testimonials {
+    padding: 60px 15px;
+  }
+  .controls-testimonials-slides {
+    max-width: 870px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .controls-testimonials-slides {
+    max-width: 420px;
   }
 }

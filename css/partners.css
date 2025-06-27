@@ -10,6 +10,9 @@
 .carousel-wrapper {
   overflow: hidden;
   cursor: grab;
+    user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; 
 }
 
 .carousel-wrapper:active {

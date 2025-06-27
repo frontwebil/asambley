@@ -57,3 +57,25 @@
   padding: 14px;
   border-radius: 4px;
 }
+
+@media only screen and (max-width: 900px) {
+  .join-to-us-container img {
+    display: none;
+  }
+  .form-group-input{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .join-to-us{
+    padding: 0;
+  }
+  .join-to-us-container{
+    border-radius: 0;
+    padding: 20px;
+  }
+  .be-part-button{
+    font-size: 15px;
+  }
+}

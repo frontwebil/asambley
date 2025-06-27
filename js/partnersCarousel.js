@@ -1,14 +1,17 @@
-export function partnersCarousel(){
-    const wrapper = document.getElementById('carousel-wrapper');
+export function partnersCarousel() {
+  const wrapper = document.getElementById('carousel-wrapper');
+  const carousel = document.getElementById('carousel');
+
   let isDown = false;
   let startX;
   let scrollLeft;
 
+  // 🖱️ Події мишки
   wrapper.addEventListener('mousedown', (e) => {
     isDown = true;
-    wrapper.classList.add('active');
     startX = e.pageX - wrapper.offsetLeft;
     scrollLeft = wrapper.scrollLeft;
+    wrapper.classList.add('active');
   });
 
   wrapper.addEventListener('mouseleave', () => {
@@ -25,15 +28,34 @@ export function partnersCarousel(){
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - wrapper.offsetLeft;
-    const walk = (x - startX) * 2; // швидкість
+    const walk = (x - startX) * 2;
     wrapper.scrollLeft = scrollLeft - walk;
   });
 
-  // Зупинка анімації при наведенні (опційно)
-  wrapper.addEventListener('mouseenter', () => {
-    document.getElementById('carousel').style.animationPlayState = 'paused';
+  // 📱 Події для тачскріну
+  wrapper.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - wrapper.offsetLeft;
+    scrollLeft = wrapper.scrollLeft;
   });
-  wrapper.addEventListener('mouseleave', () => {
-    document.getElementById('carousel').style.animationPlayState = 'running';
+
+  wrapper.addEventListener('touchend', () => {
+    isDown = false;
   });
+
+  wrapper.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    const x = e.touches[0].pageX - wrapper.offsetLeft;
+    const walk = (x - startX) * 2;
+    wrapper.scrollLeft = scrollLeft - walk;
+  });
+
+  // 🛑 Зупинка/відновлення автоанімації при наведенні (або торканні)
+  const pause = () => { carousel.style.animationPlayState = 'paused'; };
+  const resume = () => { carousel.style.animationPlayState = 'running'; };
+
+  wrapper.addEventListener('mouseenter', pause);
+  wrapper.addEventListener('mouseleave', resume);
+  wrapper.addEventListener('touchstart', pause);
+  wrapper.addEventListener('touchend', resume);
 }

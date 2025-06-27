@@ -10,7 +10,6 @@ export function wordpressPosts() {
     .then((data) => {
       data.forEach((p) => {
         if(posts.length > 3) return;
-        console.log(1)
         const title = p.title.rendered;
         const contentHTML = p.content.rendered;
         const postLink = p.link;
@@ -39,7 +38,6 @@ export function wordpressPosts() {
         };
         if (posts.length < 3) {
           posts.push(post);
-          console.log(posts)
           postsContainer.innerHTML += `
             <div class="post-card">
             <div class="post-card-top">

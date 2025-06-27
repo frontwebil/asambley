@@ -66,3 +66,28 @@
   margin-top: 20px;
   border-top: 1px solid #0000001a;
 }
+
+@media only screen and (max-width: 1100px) {
+  .posts-cards {
+    flex-wrap: wrap;
+  }
+  .post-card {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .all-posts {
+    padding: 12px 20px;
+  }
+
+  .posts {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+    .all-posts {
+    padding: 8px 16px;
+  }
+}

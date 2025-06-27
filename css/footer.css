@@ -3,9 +3,9 @@ footer {
   padding: 20px 0 40px;
 }
 
-footer .container{
+footer .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
 }
@@ -38,8 +38,30 @@ footer .container{
 .footer-icons {
   display: flex;
   gap: 24px;
+  padding-top: 15px;
+  max-width: 200px;
+  width: 100%;
 }
 .footer-icon {
   width: 32px;
   height: 32px;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-left {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+  }
 }
