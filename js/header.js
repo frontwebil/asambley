@@ -3,6 +3,7 @@ export function initHeaderScroll() {
   const body = document.body;
   const headerBurger = document.querySelector(".custom-burger");
   const slidingMenu = document.querySelector(".sliding-menu");
+  const links = document.querySelector(".mobile-nav-link");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 90) {
@@ -28,5 +29,16 @@ export function initHeaderScroll() {
       slidingMenu.classList.remove("active");
       body.style.overflow = "";
     }
+  });
+
+  links.addEventListener("click", () => {
+    if (window.scrollY > 90) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+    headerBurger.classList.remove("active");
+    slidingMenu.classList.remove("active");
+    body.style.overflow = "";
   });
 }
