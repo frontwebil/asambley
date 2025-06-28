@@ -94,10 +94,10 @@ export function structure() {
   ];
 
   let SLIDES_PER_PAGE_Structure = 3;
-  if (screenWidth <= 1265) {
+  if (screenWidth <= 900) {
     SLIDES_PER_PAGE_Structure = 2;
   }
-  if (screenWidth <= 850) {
+  if (screenWidth <= 590) {
     SLIDES_PER_PAGE_Structure = 1;
   }
 
@@ -115,7 +115,7 @@ export function structure() {
     function createPersonalBlock(person) {
       return `
       <div class="structure-column">
-        <div class="whats-difference-block" style="height : 100%;">
+        <div class="whats-difference-block" >
           <img src="${person.img1}" alt="" />
           <h3 class="text-m-vn" style="text-transform: uppercase">${
             person.title1
@@ -127,7 +127,7 @@ export function structure() {
         ${
           person.title2
             ? `
-        <div class="whats-difference-block" style="height : 100%;">
+        <div class="whats-difference-block">
           <img src="${person.img2}" alt="" />
           <h3 class="text-m-vn" style="text-transform: uppercase">${person.title2}</h3>
           <p class="text-m" style="color: #464646">

@@ -64,6 +64,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .text-xl-vn {
+    font-size: 24px;
+  }
   .section-title {
     font-size: 36px;
   }
@@ -75,14 +78,42 @@
   .text-l {
     font-size: 20px !important;
   }
+  .text-l-vn {
+    font-size: 20px;
+    font-family: "Vinnytsia Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .text-m-vn {
+    font-size: 16px;
+    font-family: "Vinnytsia Sans", sans-serif;
+    font-weight: 700;
+  }
   .text-xs {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .text-xl-vn {
+    font-size: 20px;
+  }
   .text-l {
     font-size: 16px !important;
+  }
+  .text-l-vn {
+    font-size: 16px;
+    font-family: "Vinnytsia Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .text-m-vn {
+    font-size: 12px;
+    font-family: "Vinnytsia Sans", sans-serif;
+    font-weight: 700;
+  }
+  .text-m {
+    font-size: 12px !important;
   }
   .section-title {
     font-size: 26px;

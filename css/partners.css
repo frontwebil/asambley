@@ -52,3 +52,19 @@
     transform: translateX(-50%);
   }
 }
+
+
+@media only screen and (max-width: 900px) {
+.carousel{
+  gap: 15px;
+}
+.firm {
+  max-width: 180px;
+}
+.carousel {
+  margin-top: 10px;
+}
+.partners {
+  padding: 25px 0 10px;
+}
+}

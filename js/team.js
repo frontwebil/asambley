@@ -29,16 +29,19 @@ export function team() {
     {
       name: "Пилипенко",
       surname: "Анатолій Федорович",
-      img: "images/team/4.png",
+      img: "images/team/5.png",
       posada: ["Член Правління"],
     },
   ];
 
   let SLIDES_PER_PAGE_TEAM = 4;
-  if (screenWidth <= 1265) {
+  if (screenWidth <= 1200) {
+    SLIDES_PER_PAGE_TEAM = 3;
+  }
+  if (screenWidth <= 940) {
     SLIDES_PER_PAGE_TEAM = 2;
   }
-  if (screenWidth <= 850) {
+  if (screenWidth <= 680) {
     SLIDES_PER_PAGE_TEAM = 1;
   }
 

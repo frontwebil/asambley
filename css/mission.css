@@ -28,5 +28,29 @@
   gap: 10px;
   border-radius: 12px;
 }
-/* .mission-content-img {
-} */
+
+@media only screen and (max-width: 900px) {
+.mission {
+  padding: 60px 0;
+}
+  .mission-content-img {
+    display: none;
+  }
+  .mission-content {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .mission-content-img {
+    display: flex;
+  }
+  .mission-content {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mission-content-card{
+    padding: 12px;
+  }
+}

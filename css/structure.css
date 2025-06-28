@@ -8,6 +8,40 @@
   gap: 20px;
 }
 
-.structure-slide{
+.structure-slide {
   padding: 40px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .structure {
+    padding: 50px 0;
+  }
+  .structure-slide {
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .whats-difference-block img{
+    width: 30px;
+    height: 30px;
+  }
+  .structure-slide {
+    padding: 0px 0;
+  }
+  .structure-slides {
+    min-height: 220px;
+  }
+  .structure-column .whats-difference-block {
+    max-width: 410px;
+    width: 100%;
+    box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+      0 4px 4px -1px rgba(12, 12, 13, 0.1);
+    background: #fafafa;
+    padding: 14px 18px;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    max-height: max-content;
+  }
 }

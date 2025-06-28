@@ -17,12 +17,42 @@
   width: 100%;
   box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
     0 4px 4px -1px rgba(12, 12, 13, 0.1);
-  background: #FAFAFA;
+  background: #fafafa;
   padding: 14px 18px;
   border-radius: 12px;
   text-align: center;
 }
-.whats-difference-block h3{
+.whats-difference-block h3 {
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+.structure-column .whats-difference-block {
+  max-width: 410px;
+  width: 100%;
+  box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+    0 4px 4px -1px rgba(12, 12, 13, 0.1);
+  background: #fafafa;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-align: center;
+  height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .whats-difference-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whats-difference {
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .whats-difference-block h3 {
+    font-size: 20px;
+  }
+  .whats-difference-block p {
+    font-size: 16px!important;
+  }
 }

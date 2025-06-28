@@ -1,5 +1,5 @@
 .why-join {
-  background: #ECEBFF;
+  background: #ecebff;
   padding: 40px 0;
 }
 .why-join-flex {
@@ -25,3 +25,11 @@
   height: 32px;
 }
 
+@media only screen and (max-width: 900px) {
+  .why-join-flex {
+    flex-direction: column;
+  }
+  .why-join-flex-text-row {
+    align-items: center;
+  }
+}

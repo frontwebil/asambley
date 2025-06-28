@@ -1,6 +1,6 @@
 
 .field-of-activity .container {
-  padding: 0px 0 140px;
+  padding: 0px 15px 140px;
   z-index: 3;
   display: flex;
   gap: 20px;
@@ -16,7 +16,7 @@
   max-width: 415px;
   padding: 18px;
   text-align: center;
-
+  width: 100%;
   min-height: 320px;
 
   display: flex;
@@ -39,8 +39,51 @@
 }
 .field-of-activity-block-column-row {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .field-of-activity-block-img {
   width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .field-of-activity .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .field-of-activity-column{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .field-of-activity .container{
+    padding: 0 15px 60px;
+  }
+
+  .field-of-activity-block{
+    gap: 20px;
+    min-height: 250px;
+  }
+  .field-of-activity-block-img{
+    max-width: 100%;
+    max-height: 120px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .field-of-activity-column{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blue-section{
+    padding: 35px 20px;
+  }
+  .field-of-activity-block-column-row p{
+    font-size: 16px!important;
+  }
+  .field-of-activity-block-top h2{
+    font-size: 20px;
+  }
 }

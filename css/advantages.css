@@ -17,7 +17,25 @@
   text-align: center;
 }
 
-.advantages-block h3{
+.advantages-block h3 {
   padding-top: 14px;
   padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+.advantages {
+  padding: 60px 0;
+}
+  .advantages .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .advantages-block{
+    max-width: 140px;
+  }
 }
