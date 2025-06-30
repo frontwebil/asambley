@@ -58,8 +58,8 @@ export function gallerySlider() {
 
   function init() {
     const slidesContainer = document.querySelector(".gallery-slides");
-    const nextButton = document.querySelector(".controls-gallery-prev");
-    const prevButton = document.querySelector(".controls-gallery-next");
+    const prevButton = document.querySelector(".controls-gallery-prev");
+    const nextButton = document.querySelector(".controls-gallery-next");
     const indicators = document.querySelector(".indicators-gallery");
 
     let touchStartX = 0;
