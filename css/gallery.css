@@ -234,15 +234,18 @@
 }
 
 .modal-prev {
-  left: -50px;
+  left: 0px;
 }
 
 .modal-next {
-  right: -50px;
+  right: 0px;
 }
 
 .modal-prev:hover,
 .modal-next:hover,
 .modal-close:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 800px) {
 }

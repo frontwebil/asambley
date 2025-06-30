@@ -128,6 +128,9 @@
   .text-xl {
     font-size: 20px !important;
   }
+  .text-s {
+  font-size: 12px;
+}
 }
 
 @media only screen and (max-width: 420px) {

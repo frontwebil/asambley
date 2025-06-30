@@ -6,7 +6,7 @@ export function gallerySlider() {
   if (screenWidth < 1100) {
     SLIDES_PER_PAGE_GALLERY = 3;
   }
-  if (screenWidth < 740) {
+  if (screenWidth < 800) {
     SLIDES_PER_PAGE_GALLERY = 2;
   }
   if (screenWidth < 600) {
