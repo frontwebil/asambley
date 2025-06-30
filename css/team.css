@@ -1,5 +1,5 @@
 .team {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   text-align: center;
   padding: 40px 0;
 }
@@ -8,10 +8,13 @@
   max-width: 305px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
+}
+.team-block h2 {
+  margin-top: 6px;
 }
 .team-block-top {
-  background: #0000001A;
+  background: #0000001a;
   padding: 12px;
   border-radius: 10px;
   min-height: 75px;
@@ -25,10 +28,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .team-block-top p{
-    font-size: 18px!important;   
+  .team-block-top p {
+    font-size: 18px !important;
   }
-  .team-block h2{
-    font-size: 24px!important;
+  .team-block h2 {
+    font-size: 24px !important;
   }
 }

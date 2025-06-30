@@ -2,7 +2,16 @@
   background: #efefef;
   padding: 40px 0;
 }
+.about-us-example {
+  padding: 40px 0;
+  margin: 100px 0;
+}
 .about-us .container-small {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.about-us-example .container-small {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -51,6 +60,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .about-us-example {
+    margin: 20px 0;
+  }
   .about-us-img {
     max-width: 320px;
   }
@@ -67,7 +79,10 @@
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
+  .about-us-example .container-small {
+    flex-direction: column-reverse;
+  }
   .about-us-img {
     display: none;
   }
@@ -78,7 +93,7 @@
     border-radius: 10px;
     width: 100%;
   }
-  .about-us .container-small{
+  .about-us .container-small {
     flex-direction: column-reverse;
   }
 }

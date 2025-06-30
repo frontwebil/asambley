@@ -1,5 +1,51 @@
-export function team(team) {
+export function team() {
   const screenWidth = window.screen.width;
+
+  const team = [
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+    {
+      name: "Ігор Олександрович",
+      surname: "Шевченко",
+      img: "images/team/team-example.png",
+      text:'Lorem ipsum dolor sit amet'
+    },
+
+  ];
 
   let SLIDES_PER_PAGE_TEAM = 4;
   if (screenWidth <= 1200) {
@@ -14,8 +60,6 @@ export function team(team) {
 
   let currentSlideIndex_TEAM = 0;
 
-  console.log(team)
-
   function initTEAMSlider() {
     const slidesContainer_TEAM = document.querySelector(".team-slides");
     const buttonPrev_TEAM = document.querySelector(".team-prev");
@@ -25,9 +69,6 @@ export function team(team) {
     function createPersonalBlock(person) {
       return `
       <div class="team-block">
-        <div class="team-block-top text-m">
-          ${person.posada.map((el) => `<p class="bold700">${el}</p>`).join("")}
-        </div>
       <img src="${person.img}" alt="${person.name} ${
         person.surname
       }" class="team-block-img">
@@ -35,6 +76,7 @@ export function team(team) {
         <span style="color: #1F12D4;">${person.surname}</span><br>
         ${person.name}
       </h2>
+      <p class="text-m">${person.text}</p>
       </div>
     `;
     }

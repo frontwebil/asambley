@@ -25,6 +25,10 @@
   font-size: 24px !important;
 }
 
+.text-xl {
+  font-size: 30px !important;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 40px;
@@ -52,15 +56,15 @@
 }
 
 .bold500 {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .bold600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .bold700 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 @media only screen and (max-width: 900px) {
@@ -69,6 +73,9 @@
   }
   .section-title {
     font-size: 36px;
+  }
+  .text-xl {
+    font-size: 24px !important;
   }
 
   .text-m {
@@ -118,10 +125,16 @@
   .section-title {
     font-size: 26px;
   }
+  .text-xl {
+    font-size: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 420px) {
   .section-title {
     font-size: 20px;
+  }
+  .text-xl {
+    font-size: 16px !important;
   }
 }
