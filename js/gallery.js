@@ -243,28 +243,6 @@ export function gallerySlider() {
       return span;
     }
 
-    prevButton.addEventListener("click", () => {
-      const totalSlides = Math.ceil(images.length / SLIDES_PER_PAGE_GALLERY);
-      if (currentSlide > 0) {
-        currentSlide--;
-        updateSlides();
-      } else if (currentSlide === 0) {
-        currentSlide = totalSlides - 1;
-        updateSlides();
-      }
-    });
-
-    nextButton.addEventListener("click", () => {
-      const totalSlides = Math.ceil(images.length / SLIDES_PER_PAGE_GALLERY);
-      if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateSlides();
-      } else if (currentSlide === totalSlides - 1) {
-        currentSlide = 0;
-        updateSlides();
-      }
-    });
-
     updateSlides();
   }
 
